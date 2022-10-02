@@ -1,4 +1,5 @@
 import classes from "./LoggedOut.module.css";
+import { CLIENT_ID, REDIRECT_URL } from "../config";
 
 const LoggedOut = () => {
   return (
@@ -6,7 +7,9 @@ const LoggedOut = () => {
       <button
         onClick={() =>
           window.location.replace(
-            "https://discord.com/api/oauth2/authorize?client_id=856501212652240939&redirect_uri=http%3A%2F%2F127.0.0.1%3A3000&response_type=code&scope=identify"
+            `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(
+              REDIRECT_URL
+            )}&response_type=code&scope=identify`
           )
         }
       >

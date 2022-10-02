@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API_URL } from "../config";
 
 const AuthContext = React.createContext({
   accessToken: "",
@@ -18,7 +19,7 @@ export const AuthContextProvider = (props) => {
   const userLoggedIn = !!token;
 
   const getUserHandler = async (token) => {
-    const response = await fetch("http://127.0.0.1:8000/oauth2/@me", {
+    const response = await fetch(`${API_URL}/oauth2/@me`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
