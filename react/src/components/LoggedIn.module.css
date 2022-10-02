@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.userCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddd;
+  padding: 20px;
+  box-shadow: 2px 2px 3px #111;
+  border-radius: 20px;
+  min-width: 700px;
+}
+
+.userCard img {
+  border-radius: 50%;
+  border: 2px solid #111;
+}
+
+.userCard .userInfo {
+  display: flex;
+}
+
+.userCard .userInfo h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.userCard .userInfo button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.userCard .userInfo button:hover,
+.userCard .userInfo button:active {
+  background-color: #800050;
+}

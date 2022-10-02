@@ -1,0 +1,5 @@
+api/node_modules
+api/dist
+api/src/config.ts
+react/node_modules
+.vscode
