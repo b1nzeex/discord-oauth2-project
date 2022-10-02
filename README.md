@@ -2,6 +2,8 @@
 
 ### An open source React and Fastify application to learn Discord OAuth2
 
+![Screenshot of the Discord OAuth2 Project](https://i.imgur.com/hj5rubQ.png)
+
 ## Step 1
 
 ###### Clone the GitHub repository to your computer
