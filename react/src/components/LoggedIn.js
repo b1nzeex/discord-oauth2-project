@@ -19,7 +19,9 @@ const LoggedIn = () => {
         </h3>
 
         <button onClick={authCtx.logout}>Logout</button>
-        <button onClick={authCtx.getUser}>Refresh Info</button>
+        <button onClick={() => authCtx.getUser(authCtx.accessToken)}>
+          Refresh Info
+        </button>
       </div>
     </div>
   );
