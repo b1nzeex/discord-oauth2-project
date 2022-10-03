@@ -2,7 +2,7 @@ import Fastify from "fastify";
 import cors from "@fastify/cors";
 import axios from "axios";
 import qs from "qs";
-import { CLIENT_ID, CLIENT_SECRET, PORT } from "./config";
+import { CLIENT_ID, CLIENT_SECRET, PORT, WEB_URL } from "./config";
 
 // Interfaces
 interface OAuth2TokenResponse {
@@ -43,7 +43,7 @@ const HOST = "https://discord.com/api";
 // Create a new server
 const fastify = Fastify({ logger: true });
 fastify.register(cors, {
-  origin: "http://127.0.0.1:3000",
+  origin: WEB_URL,
 });
 
 fastify.listen({ port: PORT }, (err, address) => {

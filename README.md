@@ -40,6 +40,7 @@ cd ..
 export const CLIENT_ID = "YOUR_CLIENT_ID";
 export const CLIENT_SECRET = "YOUR_CLIENT_SECRET";
 export const PORT = 8000;
+export const WEB_URL = "http://127.0.0.1:3000";
 ```
 
 ## Step 5
