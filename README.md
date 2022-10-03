@@ -4,6 +4,20 @@
 
 ![Screenshot of the Discord OAuth2 Project](https://i.imgur.com/hj5rubQ.png)
 
+## How does Discord OAuth2 Work?
+
+> OAuth 2.0 is an authorization framework for delegated access to APIs. It involves clients that request scopes that Resource Owners authorize/give consent to. Authorization grants are exchanged for access tokens and refresh tokens (depending on flow).
+
+###### In this case, we are using Discord OAuth2 which works as follows:
+
+- The user clicks a login button on the website which redirects them to discord's authorization page
+- When the user clicks "Authorize", discord will redirect the user back to the website to continue the OAuth2 flow
+- When redirected, a "code" query parameter will appear in the URL (e.g. http://127.0.0.1:3000?code=CODE_HERE)
+- The code is then used to make an API request to discord to exchange the code for an access token
+- An access token, refresh token and some other information is then returned after the code is provided
+- The access token is stored (optionally, you can store the refresh token too) in cookies, a database or in this project's case, browser local storage
+- This access token is then referenced at anytime to make API requests to discord (such as obtaining user information)
+
 ## Step 1
 
 ###### Clone the GitHub repository to your computer
