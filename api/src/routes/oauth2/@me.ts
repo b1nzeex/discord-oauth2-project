@@ -3,7 +3,7 @@ import type {
   DoneFuncWithErrOrRes,
   RouteOptions,
 } from "fastify";
-import { OAuth2UserResponse, OAuth2MeBody, Status } from "../interfaces";
+import { OAuth2UserResponse, OAuth2MeBody, Status } from "../../interfaces";
 import axios from "axios";
 
 const routeOptions = {

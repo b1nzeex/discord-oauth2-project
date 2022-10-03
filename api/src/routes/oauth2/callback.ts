@@ -3,8 +3,8 @@ import type {
   DoneFuncWithErrOrRes,
   RouteOptions,
 } from "fastify";
-import { OAuth2TokenBody, OAuth2TokenResponse, Status } from "../interfaces";
-import { CLIENT_ID, CLIENT_SECRET } from "../config";
+import { OAuth2TokenBody, OAuth2TokenResponse, Status } from "../../interfaces";
+import { CLIENT_ID, CLIENT_SECRET } from "../../config";
 import qs from "qs";
 import axios from "axios";
 
