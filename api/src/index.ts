@@ -95,7 +95,7 @@ interface OAuth2TokenBody {
 
 // Exchange code for a token
 fastify.post<{ Body: OAuth2TokenBody }>(
-  "/oauth2/token",
+  "/oauth2/callback",
   async (request, reply) => {
     const { code, redirectUri } = request.body;
 

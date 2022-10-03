@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchToken = async (code) => {
-      const response = await fetch(`${API_URL}/oauth2/token`, {
+      const response = await fetch(`${API_URL}/oauth2/callback`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
